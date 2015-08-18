@@ -5,7 +5,7 @@ function largestPF(number){
 	var largestPFactor = number;
 	while(currentNum > 2){
 		if(currentNum % factor === 0){
-			largestFactor = currentNum;
+			largestPFactor = currentNum;
 			currentNum /= factor;
 		}
 		else{
