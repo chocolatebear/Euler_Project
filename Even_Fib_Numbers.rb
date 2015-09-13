@@ -12,14 +12,10 @@ def get_even_fib(max_num)
 	while(num2 < max_num)
 		if (num2 % 2 == 0)
 			even_fib.push num2
-			current_num = num2
-			num2 = num1 + num2
-			num1 = current_num
-		else
-			current_num = num2
-			num2 = num1 + num2
-			num1 = current_num
 		end
+		current_num = num2
+		num2 = num1 + num2
+		num1 = current_num
 	end
 	even_fib
 end
